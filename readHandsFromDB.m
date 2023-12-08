@@ -1,7 +1,7 @@
-function hand = readHandsFromDB(playerCount, channelID, readKey)
+function hand = readHandsFromDB(maxPlayers, channelID, readKey)
     i = 1;
     playersHands = [];
-    while i <= playerCount
+    while i <= maxPlayers
         try     
             % Read player's hand
             pause(1);
